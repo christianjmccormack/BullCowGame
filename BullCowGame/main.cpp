@@ -19,7 +19,7 @@ int main()
 
 	//repeat the guess back to them
 	cout << "Your guess was: " << Guess << "." << endl;
-	cout << "This is a test of a test of a test";
+	cout << "This is a test of a test of a test times 10s";
 
 	//get a guess from the player
 	cout << "Please make a guess: ";
