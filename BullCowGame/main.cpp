@@ -10,6 +10,7 @@ int main()
 	constexpr int WORD_LENGTH = 9;
 	cout << "Welcome to Bulls and Cows, a fun word game." << endl;
 	cout << "Can you guess the " << WORD_LENGTH << " letter isogram I'm thinking of?" << endl;
+	//This is a new comment
 	
 	//get a guess from the player
 	string Guess = "";
