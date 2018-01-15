@@ -8,7 +8,7 @@ string GetGuessAndPrintBack();
 
 
 
-// The entry point for our application
+// The entry point for our applications
 int main()
 {
 	PrintIntro();
