@@ -6,17 +6,20 @@ using namespace std;
 void PrintIntro();
 void PlayGame();
 string GetGuess();
-
+bool AskToPlayAgain();
 
 
 // The entry point for our applications
 int main()
 {
-	PrintIntro();
-	PlayGame();
-
-
-
+	bool bPlayAgain = false;
+	do 
+	{
+		PrintIntro();
+		PlayGame();
+		bPlayAgain = AskToPlayAgain();
+	} 
+	while (bPlayAgain);
 	
 	return 0;
 }
@@ -52,6 +55,15 @@ string GetGuess()
 	cout << "Please make a guess: ";
 	getline(cin, Guess);
 	return Guess;
+}
+
+bool AskToPlayAgain()
+{
+	cout << "Do you want to play again (y/n)? ";
+	string Response = "";
+	getline(cin, Response);
+	return (Response[0] == 'y') || (Response[0] == 'Y');
+	
 }
 
 
