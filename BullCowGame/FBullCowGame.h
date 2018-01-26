@@ -1,5 +1,5 @@
 #pragma once
-
+#include <string>
 
 class FBullCowGame {
 public:
@@ -7,7 +7,7 @@ public:
 	int GetMaxTries();
 	int GetCurrentTry();
 	bool IsGameWon();
-	bool CheckGuessValidity(string);
+	bool CheckGuessValidity(std::string);
 
 
 //Please try and ignore this. Focus on the interface.
