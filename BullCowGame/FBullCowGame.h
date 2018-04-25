@@ -7,7 +7,7 @@ public:
 	int GetMaxTries();
 	int GetCurrentTry();
 	bool IsGameWon();
-	bool CheckGuessValidity(std::string);
+	bool CheckGuessValidity(std::string); //TODO Make a more rich return value.
 
 
 //Please try and ignore this. Focus on the interface.
