@@ -9,7 +9,7 @@ void PlayGame();
 std::string GetGuess();
 bool AskToPlayAgain();
 
-FBullCowGame BCGame; // Instantiate a new game
+FBullCowGame BCGame; // Instantiate a new game instance
 
 
 // The entry point for our applications
