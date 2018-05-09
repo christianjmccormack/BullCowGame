@@ -3,10 +3,13 @@
 //notice me!
 class FBullCowGame {
 public:
+
+	int GetMaxTries() const;
+	int GetCurrentTry() const;
+	bool IsGameWon() const;
+
+
 	void Reset(); //TODO Make a more rich return value.
-	int GetMaxTries();
-	int GetCurrentTry();
-	bool IsGameWon();
 	bool CheckGuessValidity(std::string); //TODO Make a more rich return value.
 
 
