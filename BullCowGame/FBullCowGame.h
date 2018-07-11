@@ -1,20 +1,23 @@
 #pragma once
 #include <string>
-//notice me!
+
+using FString = std::string;
+using int32 = int;
+
 class FBullCowGame {
 public:
 
-	int GetMaxTries() const;
-	int GetCurrentTry() const;
+	int32 GetMaxTries() const;
+	int32 GetCurrentTry() const;
 	bool IsGameWon() const;
 
 
 	void Reset(); //TODO Make a more rich return value.
-	bool CheckGuessValidity(std::string); //TODO Make a more rich return value.
+	bool CheckGuessValidity(FString); //TODO Make a more rich return value.
 
 
 //Please try and ignore this. Focus on the interface.
 private:
-	int MyCurrentTry = 1;
-	int MyMaxTries = 5;
+	int32 MyCurrentTry = 1;
+	int32 MyMaxTries = 5;
 };
