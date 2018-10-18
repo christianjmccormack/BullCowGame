@@ -6,18 +6,24 @@ using namespace std;
 void PrintIntro();
 string GetGuessAndPrintBack();
 
-// Entry point for our application. Adding a comment to test Commit.
+// Entry point for our application.
 int main()
 {
 	PrintIntro();
-	GetGuessAndPrintBack();	
-	GetGuessAndPrintBack();
-
+	
+	// loop for the number of turns, asking for guesses
+	constexpr int NUMBER_OF_TURNS = 5;
+	for (int count = 0; count < NUMBER_OF_TURNS; count++)
+	{
+		GetGuessAndPrintBack();
+	}
+	
 	return 0;
 }
 
-// get a guess from the player
-string GetGuessAndPrintBack() {
+
+string GetGuessAndPrintBack() 
+{
 	// get a guess from the player
 	string Guess = "";
 	cout << "Please enter your guess: ";
@@ -28,7 +34,8 @@ string GetGuessAndPrintBack() {
 	return Guess;
 }
 
-void PrintIntro() {
+void PrintIntro() 
+{
 	// introduce the game
 	constexpr int WORD_LENGTH = 6;
 	cout << "Welcome to Bulls and Cows, a fun word game" << endl;
