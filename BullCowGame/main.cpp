@@ -4,34 +4,38 @@
 using namespace std;
 
 void PrintIntro();
-string GetGuessAndPrintBack();
+void PlayGame();
+string GetGuess();
+
+
 
 // Entry point for our application.
 int main()
 {
 	PrintIntro();
-	
+	PlayGame();
+	return 0; //exit the application
+}
+
+void PlayGame()
+{
 	// loop for the number of turns, asking for guesses
 	constexpr int NUMBER_OF_TURNS = 5;
 	for (int count = 0; count < NUMBER_OF_TURNS; count++)
 	{
-		GetGuessAndPrintBack();
+		string Guess = GetGuess();
+		cout << "Your guess was: " << Guess << endl;
 	}
-	
-	return 0;
 }
 
-
-string GetGuessAndPrintBack() 
+string GetGuess() 
 {
 	// get a guess from the player
 	string Guess = "";
 	cout << "Please enter your guess: ";
 	getline(cin, Guess);
-	
-	// print the guess back to them
-	cout << "Your guess was: " << Guess << endl;
 	return Guess;
+
 }
 
 void PrintIntro() 
