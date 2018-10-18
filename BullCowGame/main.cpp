@@ -6,7 +6,7 @@ using namespace std;
 void PrintIntro();
 string GetGuessAndPrintBack();
 
-// Entry point for our application.
+// Entry point for our application. Adding a comment to test Commit.
 int main()
 {
 	PrintIntro();
