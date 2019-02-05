@@ -12,8 +12,10 @@ string GetGuess();
 // Entry point for our application.
 int main()
 {
+
 	PrintIntro();
 	PlayGame();
+	AskToPlayAgain();
 	return 0; //exit the application
 }
 
