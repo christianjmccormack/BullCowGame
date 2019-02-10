@@ -12,6 +12,7 @@ bool AskToPlayAgain();
 // Entry point for our application.
 int main()
 {
+
 	PrintIntro();
 	PlayGame();
 	AskToPlayAgain();
